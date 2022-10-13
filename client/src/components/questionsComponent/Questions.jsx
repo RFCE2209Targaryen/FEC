@@ -1,10 +1,8 @@
 import React from 'react';
-
-
-
-const Question = () => {
+import { useState } =
+const QuestionContainer = () => {
   return (
     <div>hello</div>
   )
 }
-export default QandA;
+export default QuestionContainer

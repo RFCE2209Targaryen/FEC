@@ -1,9 +1,9 @@
 import React,{ useState, useEffect } from 'react';
 import axios from 'axios';
-import './style.css';
+// import './style.css';
 
 
-const ReviewsList = (props) => {
+const ReviewsTile = (props) => {
   const [reviewsOpen, setReviewOpen] = useState(2)
 
   return (
@@ -29,4 +29,4 @@ const ReviewsList = (props) => {
   )
 }
 
-export default ReviewsList;
+export default ReviewsTile;

@@ -24,10 +24,11 @@ const App = () => {
 
   return Object.keys(product).length !== 0 ? (
     <>
+    <div>test</div>
     <div className="navbar"></div>
-    <Product product={product}/>
-    <Question product={product}/>
-    <Reviews product={product}/>
+    {/* <Product product={product}/> */}
+    {/* <Question product={product}/> */}
+    {/* <Reviews product={product}/> */}
     </>
   ) : null
 }

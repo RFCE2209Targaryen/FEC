@@ -2,6 +2,7 @@
 const path = require('path');
 const webpack = require('webpack')
 const Dotenv = require('dotenv-webpack')
+const { HotModuleReplacementPlugin } = require('webpack');
 var SRC_DIR = path.join(__dirname, '/client/src');
 var DIST_DIR = path.join(__dirname, '/client/dist');
 
@@ -44,6 +45,13 @@ module.exports = {
     new Dotenv({
       path: './.env',
       systemvars: true
-    })
+    }),
+    new HotModuleReplacementPlugin()
+    // new HTMLWebpackPlugin({
+    //   favicon: false,
+    //   showErrors: true,
+    //   cache: true,
+    //   template: join(__dirname, 'index.html')
+    // })
   ]
 };

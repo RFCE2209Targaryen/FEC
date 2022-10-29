@@ -5,8 +5,9 @@
   "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js",
-    "build": "webpack --config ./webpack.config.js",
-    "start-dev": "npx live-server & webpack --config ./webpack.config.js  -w",
+    "build": "webpack --config ./webpack.config.prod.js",
+    "build-dev": "webpack --config ./webpack.config.dev.js",
+    "start-dev": "nodemon server/index.js  & webpack --config ./webpack.config.dev.js  -w",
     "test": "jest",
     "test-coverage": "jest  --coverage"
   },

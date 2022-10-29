@@ -1,4 +1,3 @@
-
 const path = require('path');
 const webpack = require('webpack')
 const Dotenv = require('dotenv-webpack')
@@ -12,8 +11,7 @@ module.exports = {
     filename: 'bundle.js',
     path: DIST_DIR
   },
-  mode: 'production',
-  devtool: 'source-map',
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {

@@ -10,7 +10,7 @@ const App = () => {
   const [product, setProduct] = useState({})
 
   useEffect(() => {
-    axios.get(`products/66646`, {
+    axios.get(`api/products/66646`, {
     })
       .then((res) => {
         setProduct(res.data)

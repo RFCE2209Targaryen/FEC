@@ -7,7 +7,7 @@
     "start": "node server",
     "build": "webpack --config ./webpack.config.prod.js",
     "build-dev": "webpack --config ./webpack.config.dev.js",
-    "start-dev": "npx nodemon --watch server/index.js & webpack --config ./webpack.config.dev.js  -w",
+    "start-dev": "webpack --config ./webpack.config.dev.js  -w & npx nodemon --watch server/index.js",
     "test": "jest",
     "test-coverage": "jest  --coverage"
   },

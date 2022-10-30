@@ -41,7 +41,9 @@ app.put('/api/*', async (req, res) => {
     headers: {
       "Authorization": process.env.AUTH_KEY
     }
-  }).then((apiRes) => res.send(apiRes))
+  })
+    .then((apiRes) => res.sendStatus(apiRes.status))
+    .catch(err => console.log(err))
 })
 
 app.listen(PORT);
